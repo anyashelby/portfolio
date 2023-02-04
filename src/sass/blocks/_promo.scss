@@ -1,0 +1,46 @@
+.promo {
+	min-height: 100vh;
+	position: relative;
+	background: url('../img/anonfirst.jpg') 56% (9% / 404px 525px) no-repeat,
+				linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+	padding-top: 170px;
+	animation-name: anon;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	&__title {
+		margin-top: 10px;
+	}
+	&__subtitle {
+		position: relative;
+		z-index: 2;
+	}
+	&__btns {
+		margin-top: 22px;
+		display: flex; 
+		align-items: center;
+		gap: 35px;
+		font-family: 'Unbounded';
+		font-size: 14px;
+		font-weight: bold;
+	}
+	&__link {
+		color: $title_color;
+		text-decoration: none;
+		transition: 0.3s ease-in-out;
+		&:hover {
+			box-shadow:
+			1px 1px #000,
+			2px 2px #000,
+			3px 3px #000,
+			4px 4px #000,
+			5px 5px #000,
+			6px 6px #000,
+			7px 7px #000;
+		  -webkit-transform: translateX(-7px);
+		  transform: translateX(-7px);
+		}
+		&:active {
+			transform: translateX(1px);
+		}
+	}
+}

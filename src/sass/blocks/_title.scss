@@ -1,0 +1,32 @@
+.title {
+    font-family: 'Unbounded';
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 60px;
+    color: $title_color;
+    &__fz20 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    &__fz64 {
+        font-size: 64px;
+        line-height: 78px;
+    }
+    &__fz16 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__fz14 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+
+
+
+
+.promo__title {
+    color: $title_color;
+    line-height: 78px;
+}
