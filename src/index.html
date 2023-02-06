@@ -63,12 +63,12 @@
 			
 			<nav>
 				<ul class="menu__list">
-					<li class="menu__link"><a href="#me">про меня</a></li>
-					<li class="menu__link"><a href="#">мой опыт</a></li>
-					<li class="menu__link"><a href="#">мои навыки</a></li>
-					<li class="menu__link"><a href="#">мои работы</a></li>
-					<li class="menu__link"><a href="#">прайс-лист</a></li>
-					<li class="menu__link"><a href="#">контакты</a></li>
+					<li id="item" class="menu__link"><a href="#me">про меня</a></li>
+					<li id="item" class="menu__link"><a href="#resume">мой опыт</a></li>
+					<li id="item" class="menu__link"><a href="#skills">мои навыки</a></li>
+					<li id="item" class="menu__link"><a href="#">мои работы</a></li>
+					<li id="item" class="menu__link"><a href="#">прайс-лист</a></li>
+					<li id="item" class="menu__link"><a href="#">контакты</a></li>
 				</ul>
 			</nav>
 			
@@ -128,7 +128,7 @@
 						</svg>	
 					</div>
 					<h2 class="title title__fz16 about__title">Про меня</h2>
-					<div class="title about__title">Меня зовут Андрей</div>
+					<div class="title about__title animate__animated wow animate__fadeInLeft">Меня зовут Андрей</div>
 					<div class="divider"></div>	
 					<p class="about__text">
 						Создаю веб сайты любой сложности, адаптирую сайты под любые устройства а так же веб приложения. Создам сайт под ключ от а до я.Проектирование шаблона дизайна, создание разметки, стилей. Добавляем анимации и интерактивности на ваш сайт. Проиобретаем хостинг и домен к вашему адрессу.
@@ -183,6 +183,212 @@
 
 			</div>
 		
+		</div>
+	</section>
+
+
+
+	<section id="resume" class="resume">
+		<div class="container">
+			<h2 class="title title__fz16 resume__title">Опыт</h2>
+			<div class="title resume__subtitle">Мои скиллы</div>
+			<div class="divider"></div>
+			<div class="resume__wrapper">
+				<div class="resume__column">
+					<h3 class="title title__fz20 resume__column-title">Образование</h3>
+					<ul>
+						<li>
+							<div class="resume__item">
+								<div class="resume__item-head">
+									<div class="resume__item-icon">
+										<img src="./icons/universityicon.svg" alt="university">
+									</div>
+									<h4 class="title title__fz14">НУК Адмира Макарова</h4>
+									<div class="resume__item-location">Диплом бакалавра | Николаев (2018-2020)</div>
+								</div>
+								<div class="resume__item-body">
+									Поступил по ошибке, моя мать заставила закончить этот университет. Как оказалось очевидно, ничем он мне не помог в будущем. Лежит в подвале.
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="resume__item">
+								<div class="resume__item-head">
+									<div class="resume__item-icon">
+										<img src="./icons/udemyicon.svg" alt="university">
+									</div>
+									<h4 class="title title__fz14">Udemy</h4>
+									<div class="resume__item-location">Курсы по Web-разработке </div>
+								</div>
+								<div class="resume__item-body">
+									Самая популярная образовательная платформа для айтишников, где предусмотрены курсы от лучших айти преподователей. 
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="resume__column">
+					<h3 class="title title__fz20 resume__column-title">Опыт работы</h3>
+					<ul>
+						<li>
+							<div class="resume__item">
+								<div class="resume__item-head">
+									<div class="resume__item-icon">
+										<img src="./icons/seoicon.svg" alt="seo">
+									</div>
+									<h4 class="title title__fz14">Front-End Developer</h4>
+									<div class="resume__item-location">Mate academy | Киев (2023)</div>
+								</div>
+								<div class="resume__item-body">
+									Одна из лучших айти школ в Украине. Входит в топ список форбс успешных айти компаний. Основатель Академии бывший работник Гугла.
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="resume__item">
+								<div class="resume__item-head">
+									<div class="resume__item-icon">
+										<img src="./icons/uxicon.svg" alt="ui/ux">
+									</div>
+									<h4 class="title title__fz14">UI/UX Designer</h4>
+									<div class="resume__item-location">Designer | Киев (2023)</div>
+								</div>
+								<div class="resume__item-body">
+									Успешно прошел курсы по проектированию интерфейсов и создание макетов сайта. Спроектирую и реализую дизайн с нуля 
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				
+			</div>
+		</div>
+	</section>
+
+	<section id="skills" class="skills">
+		<div class="container">
+			<h2 class="title title__fz16 skills__title">Навыки</h2>
+			<div class="title skills__subtitle">Что я использую в работе</div>
+			<div class="divider"></div>
+			
+			<div class="skills__wrapper">
+				<div class="skills__card">
+					<div class="skills__card-logo">
+						<img src="./icons/html.svg" alt="html">
+					</div>
+					<div class="title title__fz14 skills__card-title">HTML5</div>
+					<p class="skills__card-desrc">
+						Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта
+					</p>
+				</div>
+				<div class="skills__card">
+					<div class="skills__card-logo">
+						<img src="./icons/css.svg" alt="css3">
+					</div>
+					<div class="title title__fz14 skills__card-title">CSS3</div>
+					<p class="skills__card-desrc">
+						Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!
+					</p>
+				</div>
+				<div class="skills__card">
+					<div class="skills__card-logo">
+						<img src="./icons/js.svg" alt="javasctipt">
+					</div>
+					<div class="title title__fz14 skills__card-title">Java Sctipt</div>
+					<p class="skills__card-desrc">
+						Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое
+					</p>
+				</div>
+				<div class="skills__card">
+					<div class="skills__card-logo">
+						<img src="./icons/jquery.svg" alt="jquery">
+					</div>
+					<div class="title title__fz14 skills__card-title">Jquery</div>
+					<p class="skills__card-desrc">
+						Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует
+					</p>
+				</div>
+				<div class="skills__card">
+					<div class="skills__card-logo">
+						<img src="./icons/react.svg" alt="react">
+					</div>
+					<div class="title title__fz14 skills__card-title">React</div>
+					<p class="skills__card-desrc">
+						Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели
+					</p>
+				</div>
+				<div class="skills__card">
+					<div class="skills__card-logo">
+						<img src="./icons/node.js.svg" alt="nodejs">
+					</div>
+					<div class="title title__fz14 skills__card-title">Node.js</div>
+					<p class="skills__card-desrc">
+						Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит
+					</p>
+				</div>
+				<div class="skills__card">
+					<div class="skills__card-logo">
+						<img src="./icons/mongo.svg" alt="mongo">
+					</div>
+					<div class="title title__fz14 skills__card-title">Mongo.db</div>
+					<p class="skills__card-desrc">
+						Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения
+					</p>
+				</div>
+			</div>
+
+			<div class="skills__ratings">
+				<div class="skills__ratings-item">
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="skills__rating">
+			<div class="skills__rating-item">
+				<div class="title title__fz14 skills__rating-title">Создание сайтов</div>
+				<div class="skills__rating-counter">100%</div>
+				<div class="skills__rating-line">
+					<span style="width: 100%"></span>
+				</div>
+			</div>
+			<div class="skills__rating-item">
+				<div class="title title__fz14 skills__rating-title">Создание приложений</div>
+				<div class="skills__rating-counter">85%</div>
+				<div class="skills__rating-line">
+					<span style="width: 85%"></span>
+				</div>
+			</div>
+			<div class="skills__rating-item">
+				<div class="title title__fz14 skills__rating-title">Работа с данными</div>
+				<div class="skills__rating-counter">90%</div>
+				<div class="skills__rating-line">
+					<span style="width: 90%"></span>
+				</div>
+			</div>
+			<div class="skills__rating-item">
+				<div class="title title__fz14 skills__rating-title">Креативность</div>
+				<div class="skills__rating-counter">75%</div>
+				<div class="skills__rating-line">
+					<span style="width: 75%"></span>
+				</div>
+			</div>
+			<div class="skills__rating-item">
+				<div class="title title__fz14 skills__rating-title">Создание дизайна</div>
+				<div class="skills__rating-counter">90%</div>
+				<div class="skills__rating-line">
+					<span style="width: 90%"></span>
+				</div>
+			</div>
+			<div class="skills__rating-item">
+				<div class="title title__fz14 skills__rating-title">Soft skills</div>
+				<div class="skills__rating-counter">95%</div>
+				<div class="skills__rating-line">
+					<span style="width: 95%"></span>
+				</div>
+			</div>
 		</div>
 	</section>
 

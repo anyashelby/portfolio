@@ -21,7 +21,7 @@
     &__content {
         padding-top: 12px;
         .divider {
-            margin-top: 0;
+            margin: 0;
         }
     }
     &__cross {
@@ -45,7 +45,7 @@
     }
     &__skills {
         display: grid; 
-        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 1fr);
         column-gap: 45px;
         row-gap: 40px;
         &-item {

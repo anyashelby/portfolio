@@ -3749,6 +3749,10 @@ progress {
   padding: 0;
 }
 
+body {
+  background-color: #C9C9C8;
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -3758,7 +3762,7 @@ progress {
   width: 60px;
   height: 3px;
   background-color: #F6F930;
-  margin-top: 25px;
+  margin: 25px auto 0 auto;
 }
 
 .promo {
@@ -4073,7 +4077,7 @@ progress {
   padding-top: 12px;
 }
 .about__content .divider {
-  margin-top: 0;
+  margin: 0;
 }
 .about__cross {
   position: absolute;
@@ -4096,7 +4100,7 @@ progress {
 }
 .about__skills {
   display: grid;
-  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-template: repeat(2, minmax(115px, auto))/repeat(2, 1fr);
   -moz-column-gap: 45px;
        column-gap: 45px;
   row-gap: 40px;
@@ -4113,4 +4117,213 @@ progress {
   font-size: 12px;
   font-weight: normal;
   line-height: 18px;
+}
+
+.resume {
+  padding-top: 125px;
+  padding-bottom: 130px;
+}
+.resume__title {
+  position: relative;
+  text-align: center;
+}
+.resume__title:before {
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-18%);
+  width: 36px;
+  height: 36px;
+  background-color: #F6F930;
+  z-index: -1;
+}
+.resume__subtitle {
+  text-align: center;
+}
+.resume__wrapper {
+  padding: 60px 65px 0 65px;
+  display: grid;
+  grid-template-columns: repeat(2, 419px);
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+}
+.resume__column-title {
+  padding-left: 35px;
+  position: relative;
+}
+.resume__column-title:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #F6F930;
+  border-radius: 100%;
+  left: -7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.resume__column ul {
+  list-style-type: none;
+  padding: 0;
+}
+.resume__column ul li {
+  position: relative;
+}
+.resume__column ul li:after {
+  content: "";
+  width: 1px;
+  height: calc(100% + 16px);
+  position: absolute;
+  top: -13px;
+  left: 0;
+  background-color: #132C33;
+}
+.resume__item {
+  position: relative;
+}
+.resume__item:before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  position: absolute;
+  top: 60px;
+  background-color: #132C33;
+  z-index: 1;
+}
+.resume__item-head {
+  position: relative;
+  padding: 40px 0 0 100px;
+}
+.resume__item-head h4 {
+  margin-bottom: 0;
+}
+.resume__item-body {
+  padding-left: 43px;
+  margin-top: 15px;
+}
+.resume__item-icon {
+  position: absolute;
+  top: 43px;
+  left: 50px;
+}
+.resume__item-icon:before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: #F6F930;
+  z-index: -1;
+}
+.resume__item-icon img {
+  position: absolute;
+  left: 17px;
+  top: 14px;
+}
+.resume__item-location {
+  margin-top: 4px;
+  font-family: "Hack";
+  font-size: 12px;
+  line-height: 14px;
+}
+.resume__item-body {
+  font-family: "Hack";
+  font-size: 12px;
+  line-height: 15.6px;
+}
+
+.skills__title {
+  position: relative;
+  text-align: center;
+}
+.skills__title:before {
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-18%);
+  width: 36px;
+  height: 36px;
+  background-color: #F6F930;
+  z-index: -1;
+}
+.skills__subtitle {
+  text-align: center;
+}
+.skills__wrapper {
+  margin-top: 60px;
+  display: grid;
+  grid-template: repeat(2, minmax(270px, auto))/repeat(4, 270px);
+  grid-auto-rows: minmax(270px, auto);
+  gap: 13px;
+}
+.skills__card {
+  padding: 30px 29px 25px 30px;
+  border: 1px solid #132C33;
+}
+.skills__card-logo img {
+  display: block;
+  max-width: 100%;
+  height: 65px;
+}
+.skills__card-title {
+  margin-top: 20px;
+}
+.skills__card-desrc {
+  margin-top: 20px;
+  font-family: "Hack";
+  font-size: 12px;
+  line-height: 15.6px;
+}
+.skills__rating {
+  margin-top: 120px;
+  display: grid;
+  grid-template: repeat(2, minmax(70px, auto))/repeat(3, 350px);
+  -moz-column-gap: 45px;
+       column-gap: 45px;
+  row-gap: 38px;
+  place-content: center center;
+}
+.skills__rating-item {
+  display: grid;
+  grid-template: minmax(21px, 36px) 14px/225px 35px;
+  place-content: space-between space-between;
+  row-gap: 20px;
+}
+.skills__rating-title {
+  padding: 2px 0 0 13px;
+  position: relative;
+}
+.skills__rating-title:before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: #F6F930;
+  z-index: -1;
+}
+.skills__rating-title:before {
+  left: 0;
+  top: -20%;
+}
+.skills__rating-counter {
+  font-family: "Hack";
+  font-size: 14px;
+  font-weight: bold;
+}
+.skills__rating-line {
+  width: 350px;
+  background-color: #E8E4DE;
+  border-radius: 4px;
+  grid-column: 1/3;
+}
+.skills__rating-line span {
+  display: block;
+  height: 100%;
+  background-color: #F6F930;
+  border-radius: 4px;
 }/*# sourceMappingURL=style.css.map */
