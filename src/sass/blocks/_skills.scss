@@ -1,12 +1,4 @@
 .skills {
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-    }
-    &__subtitle {
-        text-align: center;
-    }
     &__wrapper {
         margin-top: 60px;
         display: grid;

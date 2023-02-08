@@ -63,12 +63,12 @@
 			
 			<nav>
 				<ul class="menu__list">
-					<li id="item" class="menu__link"><a href="#me">про меня</a></li>
-					<li id="item" class="menu__link"><a href="#resume">мой опыт</a></li>
-					<li id="item" class="menu__link"><a href="#skills">мои навыки</a></li>
-					<li id="item" class="menu__link"><a href="#">мои работы</a></li>
-					<li id="item" class="menu__link"><a href="#">прайс-лист</a></li>
-					<li id="item" class="menu__link"><a href="#">контакты</a></li>
+					<li class="menu__link"><a href="#me">про меня</a></li>
+					<li class="menu__link"><a href="#resume">мой опыт</a></li>
+					<li class="menu__link"><a href="#skills">мои навыки</a></li>
+					<li class="menu__link"><a href="#works">мои работы</a></li>
+					<li class="menu__link"><a href="#list">прайс-лист</a></li>
+					<li class="menu__link"><a href="#">контакты</a></li>
 				</ul>
 			</nav>
 			
@@ -108,7 +108,7 @@
 				Я веб дизайнер и web разработчик
 			</h1>
 			<div class="promo__btns">
-				<a href="#" class="promo__link btn">Портфолио</a>
+				<a href="#works" class="promo__link btn">Портфолио</a>
 				<a href="#me" class="promo__link btn">Про меня</a>
 			</div>
 		</div>
@@ -186,12 +186,10 @@
 		</div>
 	</section>
 
-
-
 	<section id="resume" class="resume">
 		<div class="container">
-			<h2 class="title title__fz16 resume__title">Опыт</h2>
-			<div class="title resume__subtitle">Мои скиллы</div>
+			<h2 class="title title__fz16 title__section-title">Опыт</h2>
+			<div class="title title__section-subtitle">Мои скиллы</div>
 			<div class="divider"></div>
 			<div class="resume__wrapper">
 				<div class="resume__column">
@@ -269,8 +267,8 @@
 
 	<section id="skills" class="skills">
 		<div class="container">
-			<h2 class="title title__fz16 skills__title">Навыки</h2>
-			<div class="title skills__subtitle">Что я использую в работе</div>
+			<h2 class="title title__fz16 title__section-title">Навыки</h2>
+			<div class="title title__section-subtitle">Что я использую в работе</div>
 			<div class="divider"></div>
 			
 			<div class="skills__wrapper">
@@ -338,56 +336,132 @@
 					</p>
 				</div>
 			</div>
-
-			<div class="skills__ratings">
-				<div class="skills__ratings-item">
-					
+			
+			<div class="skills__rating">
+				<div class="skills__rating-item">
+					<div class="title title__fz14 skills__rating-title">Создание сайтов</div>
+					<div class="skills__rating-counter">100%</div>
+					<div class="skills__rating-line">
+						<span></span>
+					</div>
+				</div>
+				<div class="skills__rating-item">
+					<div class="title title__fz14 skills__rating-title">Создание приложений</div>
+					<div class="skills__rating-counter">85%</div>
+					<div class="skills__rating-line">
+						<span></span>
+					</div>
+				</div>
+				<div class="skills__rating-item">
+					<div class="title title__fz14 skills__rating-title">Работа с данными</div>
+					<div class="skills__rating-counter">90%</div>
+					<div class="skills__rating-line">
+						<span></span>
+					</div>
+				</div>
+				<div class="skills__rating-item">
+					<div class="title title__fz14 skills__rating-title">Креативность</div>
+					<div class="skills__rating-counter">75%</div>
+					<div class="skills__rating-line">
+						<span></span>
+					</div>
+				</div>
+				<div class="skills__rating-item">
+					<div class="title title__fz14 skills__rating-title">Создание дизайна</div>
+					<div class="skills__rating-counter">90%</div>
+					<div class="skills__rating-line">
+						<span></span>
+					</div>
+				</div>
+				<div class="skills__rating-item">
+					<div class="title title__fz14 skills__rating-title">Soft skills</div>
+					<div class="skills__rating-counter">95%</div>
+					<div class="skills__rating-line">
+						<span></span>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="skills__rating">
-			<div class="skills__rating-item">
-				<div class="title title__fz14 skills__rating-title">Создание сайтов</div>
-				<div class="skills__rating-counter">100%</div>
-				<div class="skills__rating-line">
-					<span style="width: 100%"></span>
+		
+	</section>
+
+	<section id="works" class="portfolio">
+		<div class="container">
+			<h2 class="title title__fz16 title__section-title">Портфолио</h2>
+			<div class="title title__section-subtitle">Мои работы</div>
+			<div class="divider"></div>
+			<div class="portfolio__wrapper">
+				<div class="portfolio__elem"><a href="#"><img src="./img/uber.jpg" alt="project"></a></div>
+				<div class="portfolio__elem"><a href="#"><img src="./img/pulse.jpg" alt="project"></a></div>
+				<div class="portfolio__elem"><a href="#"><img src="./img/bread.jpg" alt="project"></a></div>
+				<div class="portfolio__elem vertical"><a href="#"><img src="./img/plans.jpg" alt="project"></a></div>
+				<div class="portfolio__elem"><a href="#"><img src="./img/ipad.jpg" alt="project"></a></div>
+				<div class="portfolio__elem horizontal"><a href="#"><img src="./img/mac.jpg" alt="project"></a></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="list" class="price">
+		<div class="container">
+			<h2 class="title title__fz16 title__section-title">Прайс-лист</h2>
+			<div class="divider"></div>
+			
+			<div class="price__wrapper">
+				<div class="price__item">
+					<div class="title title__fz14 price__item-title">Landing-page</div>
+					<div class="price__item-counter">от 100 $.</div>
+					<div class="price__item-descr">Одностраничный сайт для презентации услуг/товаров/...</div>
+				</div>
+
+				<div class="price__item">
+					<div class="title title__fz14 price__item-title">Web-приложение</div>
+					<div class="price__item-counter">от 400 $.</div>
+					<div class="price__item-descr">Приложение внутри браузера для лучшего комфорта</div>
+				</div>
+
+				<div class="price__item">
+					<div class="title title__fz14 price__item-title">Корпоративный сайт</div>
+					<div class="price__item-counter">от 400 $.</div>
+					<div class="price__item-descr">Сайт для вашего бизнеса или компании</div>
+				</div>
+
+				<div class="price__item">
+					<div class="title title__fz14 price__item-title">Android/IOS Приложение</div>
+					<div class="price__item-counter">от 350 $.</div>
+					<div class="price__item-descr">Приложение для смартфона любой ОС</div>
+				</div>
+
+				<div class="price__item">
+					<div class="title title__fz14 price__item-title">Интернет-магазин</div>
+					<div class="price__item-counter">от 899 $.</div>
+					<div class="price__item-descr">Инструмент для ваших продаж в сети</div>
+				</div>
+
+				<div class="price__item">
+					<div class="title title__fz14 price__item-title">Дизайн</div>
+					<div class="price__item-counter">Индивидуально</div>
+					<div class="price__item-descr">Создам дизайн для вашего сайта/приложения...</div>
 				</div>
 			</div>
-			<div class="skills__rating-item">
-				<div class="title title__fz14 skills__rating-title">Создание приложений</div>
-				<div class="skills__rating-counter">85%</div>
-				<div class="skills__rating-line">
-					<span style="width: 85%"></span>
+		
+		</div>
+	</section>
+
+	<section class="contacts">
+		<div class="container">
+			<div class="contacts__wrapper">
+				<div class="contacts__avatar">
+					<img src="./img/anonme.png" alt="avatar">
 				</div>
-			</div>
-			<div class="skills__rating-item">
-				<div class="title title__fz14 skills__rating-title">Работа с данными</div>
-				<div class="skills__rating-counter">90%</div>
-				<div class="skills__rating-line">
-					<span style="width: 90%"></span>
+				<div class="contacts__cross">
+					<svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.20011 0.995962C1.09776 0.995962 0.9953 1.03495 0.9173 1.11315L0.1173 1.91315C-0.0391 2.06955 -0.0391 2.32277 0.1173 2.47877L3.03449 5.39596L0.1173 8.31315C-0.0391 8.46955 -0.0391 8.72278 0.1173 8.87878L0.9173 9.67878C1.0737 9.83518 1.32693 9.83518 1.48293 9.67878L4.40011 6.76159L7.3173 9.67878C7.4733 9.83518 7.72693 9.83518 7.88293 9.67878L8.68293 8.87878C8.83933 8.72238 8.83933 8.46915 8.68293 8.31315L5.76574 5.39596L8.68293 2.47877C8.83933 2.32277 8.83933 2.06915 8.68293 1.91315L7.88293 1.11315C7.72653 0.95675 7.4733 0.95675 7.3173 1.11315L4.40011 4.03034L1.48293 1.11315C1.40473 1.03495 1.30246 0.995962 1.20011 0.995962Z" fill="#F6F930"/>
+					</svg>	
 				</div>
-			</div>
-			<div class="skills__rating-item">
-				<div class="title title__fz14 skills__rating-title">Креативность</div>
-				<div class="skills__rating-counter">75%</div>
-				<div class="skills__rating-line">
-					<span style="width: 75%"></span>
-				</div>
-			</div>
-			<div class="skills__rating-item">
-				<div class="title title__fz14 skills__rating-title">Создание дизайна</div>
-				<div class="skills__rating-counter">90%</div>
-				<div class="skills__rating-line">
-					<span style="width: 90%"></span>
-				</div>
-			</div>
-			<div class="skills__rating-item">
-				<div class="title title__fz14 skills__rating-title">Soft skills</div>
-				<div class="skills__rating-counter">95%</div>
-				<div class="skills__rating-line">
-					<span style="width: 95%"></span>
-				</div>
+				<h2 class="title title__fz16 contacts__title">Контакты</h2>
+				<div class="title contacts__subtitle">Свяжитесь со мной</div>
+				<div class="divider"></div>
 			</div>
 		</div>
 	</section>
