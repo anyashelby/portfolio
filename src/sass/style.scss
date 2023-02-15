@@ -23,6 +23,9 @@ body {
 	background-color: $elements_color;
 	margin: 25px auto 0 auto;
 }
+.none {
+	display: none;
+}
 
 @import 'blocks/promo';
 @import 'blocks/title';
@@ -35,3 +38,5 @@ body {
 @import 'blocks/skills';
 @import 'blocks/portfolio';
 @import 'blocks/price';
+@import 'blocks/contacts';
+@import 'blocks/media';

@@ -1,0 +1,146 @@
+.contacts {
+    padding: 0 0 90px 0;
+    &__wrapper {
+        position: relative;
+        padding: 0 35px 0 52px;
+        display: grid;
+        grid-template-columns: 400px 585px;
+        justify-content: space-between;    
+    }
+    &__avatar {
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto; 
+        }
+    }
+    &__descr {
+        padding-top: 5px;
+        .divider {
+            margin: 0;
+        }
+    }
+    &__cross {
+        position: absolute;
+        top: -5px;
+        left: 510px;
+        svg {
+            cursor: pointer;
+            &:hover {
+                -webkit-animation: rotate-center 0.8s ease-in-out both;
+	            animation: rotate-center 0.8s ease-in-out both;
+            }
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Hack';
+    }
+    &__social {
+        margin-top: 20px;
+    }
+    &__link {
+        margin-right: 25px;
+        text-decoration: none;
+        &:hover {
+			svg path {
+				fill: #fff;
+				transition: 0.2s ease-in-out;
+			}
+        } 
+    }
+    &__form { 
+        margin-top: 35px;
+        display: grid;
+        grid-template: 45px 190px 45px / repeat(2, 280px);
+        gap: 27px 25px;
+        label {
+            display: block;
+            position: absolute;
+            top: -9px;
+            left: 12px;
+            height: 18px;
+            padding: 0 8px;
+            font-size: 12px;
+            font-family: 'Hack';
+            background-color: $background_color;
+        } 
+    }
+
+    &__triggers {
+        grid-column: 1 / 3;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 25px;
+    }
+    &__policy {
+        align-self: center;
+        span {
+            font-size: 11px;
+            
+            font-family: 'Hack';
+            color: $title_color;
+        }
+    }
+    &__input {
+        position: relative;
+        input {
+            font-family: 'Hack';
+            font-size: 12px;
+            padding-left: 20px;
+            width: 100%;
+            height: 100%;
+            background: none;
+            border: 1px solid $title_color;
+            transition: 0.3s ease-in-out;
+            &:focus {
+                border-color: #1e5463;
+                outline: 0;
+                box-shadow: 0 0 10px rgb(246, 249, 48,);
+            }
+        }
+    }
+    &__textarea {
+        position: relative;
+        grid-column: 1 / 3;
+        textarea {
+            font-family: 'Hack';
+            font-size: 12px;
+            padding: 14px 20px;
+            width: 100%;
+            height: 100%;
+            background: none;
+            border: 1px solid $title_color;
+            resize: none;
+            transition: 0.3s ease-in-out;
+            &:focus {
+                border-color: #1e5463;
+                outline: 0;
+                box-shadow: 0 0 8px rgb(246, 249, 48,);
+            }
+        }
+    }
+    &__btn {
+        border: none; 
+        font-family: 'Unbounded';
+        transition: 0.3s ease-in-out;
+        padding: 13px 17px;
+        &:hover {
+			box-shadow:
+			1px 1px #000,
+			2px 2px #000,
+			3px 3px #000,
+			4px 4px #000,
+			5px 5px #000,
+			6px 6px #000,
+			7px 7px #000;
+		  -webkit-transform: translateX(-7px);
+		  transform: translateX(-7px);
+		}
+		&:active {
+			transform: translateX(1px);
+		}
+    }
+}
