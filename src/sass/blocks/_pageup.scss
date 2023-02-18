@@ -1,0 +1,12 @@
+.pageup {
+	display: none;
+	position: fixed;
+    bottom: 40px;
+	right: 20px;
+	svg {
+		transition: 0.3s ease-in-out;
+		&:hover {
+			fill: #fff;
+		}
+	}
+}

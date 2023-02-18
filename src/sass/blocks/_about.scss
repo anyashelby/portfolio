@@ -39,9 +39,9 @@
     }
     &__text {
         margin-top: 20px;
-        font-family: 'Hack';
-        font-weight: normal;
-        font-size: 14px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 500;
+        font-size: 16px;
         line-height: 21px;
     }
     &__skills {
@@ -56,9 +56,9 @@
         }
         &-text {
             margin-top: 10px;
-            font-family: 'Hack'; 
-            font-size: 12px;
-            font-weight: normal;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 500;
+            font-size: 16px;
             line-height: 18px;
         }
     }

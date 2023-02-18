@@ -1,10 +1,8 @@
 @import 'libs/bootstrap-reboot.min';
-@import 'libs/fonts';
 @import 'libs/animate.min';
 @import 'base/media';
 @import 'base/variables';
 @import 'base/mixins';
-
 
 * {
 	margin: 0;
@@ -39,4 +37,6 @@ body {
 @import 'blocks/portfolio';
 @import 'blocks/price';
 @import 'blocks/contacts';
+@import 'blocks/pageup';
+@import 'blocks/popup';
 @import 'blocks/media';

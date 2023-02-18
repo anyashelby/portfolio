@@ -95,7 +95,7 @@
 		<div class="menu__overlay"></div>
 	</div>
 
-	<header class="promo">
+	<header id="up" class="promo">
 		<div class="hamburger">
 			<span></span>
 			<span></span>
@@ -186,7 +186,7 @@
 		</div>
 	</section>
 
-	<section id="resume" class="resume none">
+	<section id="resume" class="resume">
 		<div class="container">
 			<h2 class="title title__fz16 title__section-title">Опыт</h2>
 			<div class="title title__section-subtitle">Мои скиллы</div>
@@ -265,14 +265,14 @@
 		</div>
 	</section>
 
-	<section id="skills" class="skills none">
+	<section id="skills" class="skills">
 		<div class="container">
 			<h2 class="title title__fz16 title__section-title">Навыки</h2>
 			<div class="title title__section-subtitle">Что я использую в работе</div>
 			<div class="divider"></div>
 			
 			<div class="skills__wrapper">
-				<div class="skills__card">
+				<div class="skills__card animate__animated animate__fadeIn animate__slow wow">
 					<div class="skills__card-logo">
 						<img src="./icons/html.svg" alt="html">
 					</div>
@@ -281,7 +281,7 @@
 						Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта
 					</p>
 				</div>
-				<div class="skills__card">
+				<div class="skills__card animate__animated animate__fadeIn animate__slow wow">
 					<div class="skills__card-logo">
 						<img src="./icons/css.svg" alt="css3">
 					</div>
@@ -290,7 +290,7 @@
 						Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!
 					</p>
 				</div>
-				<div class="skills__card">
+				<div class="skills__card animate__animated animate__fadeIn animate__slow wow">
 					<div class="skills__card-logo">
 						<img src="./icons/js.svg" alt="javasctipt">
 					</div>
@@ -299,7 +299,7 @@
 						Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое
 					</p>
 				</div>
-				<div class="skills__card">
+				<div class="skills__card animate__animated animate__fadeIn animate__slow wow">
 					<div class="skills__card-logo">
 						<img src="./icons/jquery.svg" alt="jquery">
 					</div>
@@ -308,7 +308,7 @@
 						Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует
 					</p>
 				</div>
-				<div class="skills__card">
+				<div class="skills__card animate__animated animate__fadeIn animate__slow wow">
 					<div class="skills__card-logo">
 						<img src="./icons/react.svg" alt="react">
 					</div>
@@ -317,7 +317,7 @@
 						Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели
 					</p>
 				</div>
-				<div class="skills__card">
+				<div class="skills__card animate__animated animate__fadeIn animate__slow wow">
 					<div class="skills__card-logo">
 						<img src="./icons/node.js.svg" alt="nodejs">
 					</div>
@@ -326,7 +326,7 @@
 						Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит
 					</p>
 				</div>
-				<div class="skills__card">
+				<div class="skills__card animate__animated animate__fadeIn animate__slow wow">
 					<div class="skills__card-logo">
 						<img src="./icons/mongo.svg" alt="mongo">
 					</div>
@@ -386,7 +386,7 @@
 		
 	</section>
 
-	<section id="works" class="portfolio none">
+	<section id="works" class="portfolio">
 		<div class="container">
 			<h2 class="title title__fz16 title__section-title">Портфолио</h2>
 			<div class="title title__section-subtitle">Мои работы</div>
@@ -402,7 +402,7 @@
 		</div>
 	</section>
 
-	<section id="list" class="price none">
+	<section id="list" class="price">
 		<div class="container">
 			<h2 class="title title__fz16 title__section-title">Прайс-лист</h2>
 			<div class="divider"></div>
@@ -448,7 +448,7 @@
 		</div>
 	</section>
 
-	<section id="info" class="contacts none">
+	<section id="info" class="contacts">
 		<div class="container">
 			<div class="contacts__wrapper">
 				<div class="contacts__avatar">
@@ -494,11 +494,11 @@
 	
 					<form action="#" class="contacts__form">
 						<div class="contacts__input">
-							<input required name="name" id="name" type="text">
+							<input required name="name" id="name" type="text" placeholder="Иван">
 							<label for="name">Ваше имя</label>
 						</div>
 						<div class="contacts__input">
-							<input required name="email" id="email" type="email">
+							<input required name="email" id="email" type="email" placeholder="xxxxxxx@gmail.com">
 							<label for="email">Ваша почта</label>
 						</div>
 						
@@ -519,8 +519,21 @@
 			</div>
 		</div>
 	</section>
-
+	<a href="#up" class="pageup" title="вверх">
+		<svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40"><path d="m288.666 845.943-59.739-60.305L480 534.565l251.073 251.073-59.739 60.305L480 653.878 288.666 845.943Zm0-253.175-59.739-59.739L480 281.39l251.073 251.639-59.739 59.739L480 400.703 288.666 592.768Z"/></svg>
+	</a>
+	<div class="popup">
+		<div class="popup__cross">
+			<svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.20011 0.995962C1.09776 0.995962 0.9953 1.03495 0.9173 1.11315L0.1173 1.91315C-0.0391 2.06955 -0.0391 2.32277 0.1173 2.47877L3.03449 5.39596L0.1173 8.31315C-0.0391 8.46955 -0.0391 8.72278 0.1173 8.87878L0.9173 9.67878C1.0737 9.83518 1.32693 9.83518 1.48293 9.67878L4.40011 6.76159L7.3173 9.67878C7.4733 9.83518 7.72693 9.83518 7.88293 9.67878L8.68293 8.87878C8.83933 8.72238 8.83933 8.46915 8.68293 8.31315L5.76574 5.39596L8.68293 2.47877C8.83933 2.32277 8.83933 2.06915 8.68293 1.91315L7.88293 1.11315C7.72653 0.95675 7.4733 0.95675 7.3173 1.11315L4.40011 4.03034L1.48293 1.11315C1.40473 1.03495 1.30246 0.995962 1.20011 0.995962Z" fill="#F6F930"/>
+			</svg>
+		</div>
+		<p>спасибо за оставленую заявку, в ближайшее время я с вами свяжусь</p>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
+

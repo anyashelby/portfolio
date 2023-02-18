@@ -14,19 +14,21 @@ $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';  
 $mail->SMTPAuth = true;                             
 $mail->Username = 'andreyhlvn@gmail.com';                
-$mail->Password = 'mgrrpoxuyaipjtus';                           
+$mail->Password = 'gaadrxvzjzhvjaje';                           
 $mail->SMTPSecure = 'ssl';                           
-$mail->setFrom('andreyhlvn@gmail.com', 'Pulse');   
-$mail->addAddress('xasolom452@fandua.com');     
+$mail->setFrom('andreyhlvn@gmail.com', 'Andrey Schneider');   
+$mail->addAddress('hiwovam956@ngopy.com');     
 
 $mail->isHTML(true);                                  
 
-$mail->Subject = 'Вы оставили сообщение';
+$mail->Subject = 'Вы оставили заявку на сайте holovanov.ru';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
-	Имя: ' . $name . ' <br>
-	Номер телефона: ' . $phone . '<br>
-	E-mail: ' . $email . '';
+		<b>Ваши данные</b> <br> 
+	<em>Имя:</em> ' . $name . ' <br>
+	<em>E-mail:</em> ' . $email . ' <br>
+	<h1>Агой</h1><br>
+	<p style="font-size: 16px">Спасибо что оставили ваше сообщение/заявку</br>
+	я с вами свяжусь в свободное время.!!!</p> ';
 
 if(!$mail->send()) {
     return false;
