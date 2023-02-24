@@ -2,7 +2,6 @@
 	min-height: 100vh;
 	position: relative;
 	padding-top: 170px;
-	background: url('../img/codebg.jpg') center (center / cover) no-repeat; 
 	&__title {
 		margin-top: 10px;
 	}
@@ -15,29 +14,19 @@
 		display: flex; 
 		align-items: center;
 		gap: 35px;
-		font-family: 'PT Sans Caption', sans-serif;
-		font-weight: 400;
-		font-size: 14px;
-		font-weight: bold;
 	}
 	&__link {
 		color: $title_color;
 		text-decoration: none;
 		transition: 0.3s ease-in-out;
+		&:nth-child(2) {
+			padding: 12px 22px;
+		}
 		&:hover {
-			box-shadow:
-			1px 1px #000,
-			2px 2px #000,
-			3px 3px #000,
-			4px 4px #000,
-			5px 5px #000,
-			6px 6px #000,
-			7px 7px #000;
-		  -webkit-transform: translateX(-7px);
-		  transform: translateX(-7px);
+			background-color: #F2E861;
 		}
 		&:active {
-			transform: translateX(1px);
+			background-color: #8B7900;
 		}
 	}
 	

@@ -9,6 +9,7 @@
     }
     &__column {
         &-title {
+        color: #8205F2;
             padding-left: 35px;
             position: relative;
             &:before {
@@ -78,13 +79,13 @@
         }
         &-location {
             margin-top: 4px;
-            font-family: 'Roboto Slab', serif;
+            font-family: 'Source Code Pro', monospace;
             font-weight: 400;
             font-size: 12px;
             line-height: 14px;
         }
         &-body {
-            font-family: 'Roboto Slab', serif;
+            font-family: 'Source Code Pro', monospace;
             font-weight: 500;
             font-size: 16px;
             line-height: 15.6px;    

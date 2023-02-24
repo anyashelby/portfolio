@@ -1,0 +1,45 @@
+.switcher {
+    position: absolute;
+    top: 48px;
+    left: 60%;
+    margin: 0;
+    margin-left: -50px;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: none; 
+    &__legend {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+    &__radio {
+        -webkit-appearance: none;
+        appearance: none; 
+        margin: 0;
+        width: 32px;
+        height: 32px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        transition: filter 0.1s ease-in;
+        &:focus {
+            outline: none; 
+        }
+        &-light {
+            background-image: url('../icons/sun.svg');
+        }
+        &-auto {
+            background-image: url('../icons/standby.svg');
+        }
+        &-dark {
+            background-image: url('../icons/moon.svg');
+        } 
+    }
+    &__status {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
